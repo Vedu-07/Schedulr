@@ -6,6 +6,7 @@ import { HTTPSTATUS } from "./config/http.config";
 import { errorHandler } from "./middlewares/errorHandler.middleware";
 import { asyncHandler } from "./middlewares/asyncHandler.middeware";
 import { BadRequestException } from "./utils/app-error";
+import { initializeDatabase } from "./database/database";
 
 
 const app = express();
@@ -28,16 +29,16 @@ app.get(
     asyncHandler(async (req: Request, res: Response, next: NextFunction) => {
       throw new BadRequestException("throwing async error");
       res.status(HTTPSTATUS.OK).json({
-        message: "Hello Jii Kaise Hooo",
+        message: "Hello Subscribe to the channel",
       });
     })
   );
-
 
 
 app.use(errorHandler);
 
 
 app.listen(config.PORT, async () => {
-    console.log(`Server Listening on port ${config.PORT} in ${config.NODE_ENV}`);
-});
+    await initializeDatabase();
+    console.log(`Server listening on port ${config.PORT} in ${config.NODE_ENV}`);
+  });
