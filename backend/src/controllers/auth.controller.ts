@@ -4,7 +4,6 @@ import { LoginDto, RegisterDto } from "../database/dto/auth.dto";
 import { asyncHandlerAndValidation } from "../middlewares/withValidation.middleware";
 import { loginService, registerService } from "../services/auth.services";
 
-//withValidation(RegisterDto, "body")();
 
 export const registerController = asyncHandlerAndValidation(
   RegisterDto,

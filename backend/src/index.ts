@@ -8,6 +8,7 @@ import { asyncHandler } from "./middlewares/asyncHandler.middeware";
 import { BadRequestException } from "./utils/app-error";
 import { initializeDatabase } from "./database/database";
 import authRoutes from "./routes/auth.route";
+import passport from "passport";
 
 
 const app = express();
@@ -15,7 +16,7 @@ const app = express();
 const BASE_PATH = config.BASE_PATH;
 
 app.use(express.json());
-
+app.use(passport.initialize());
 app.use(express.urlencoded({extended:true}));
 
 app.use(    
