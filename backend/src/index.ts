@@ -9,6 +9,7 @@ import { BadRequestException } from "./utils/app-error";
 import { initializeDatabase } from "./database/database";
 import authRoutes from "./routes/auth.route";
 import passport from "passport";
+import eventRoutes from "./routes/event.route";
 
 
 const app = express();
@@ -37,7 +38,7 @@ app.get(
   );
 
 app.use(`${BASE_PATH}/auth`, authRoutes);
-
+app.use(`${BASE_PATH}/event`, eventRoutes);
 app.use(errorHandler);
 
 
