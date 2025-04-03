@@ -10,6 +10,7 @@ import { initializeDatabase } from "./database/database";
 import authRoutes from "./routes/auth.route";
 import passport from "passport";
 import eventRoutes from "./routes/event.route";
+import availabilityRoutes from "./routes/availability.route";
 
 
 const app = express();
@@ -39,6 +40,7 @@ app.get(
 
 app.use(`${BASE_PATH}/auth`, authRoutes);
 app.use(`${BASE_PATH}/event`, eventRoutes);
+app.use(`${BASE_PATH}/availability`, availabilityRoutes);
 app.use(errorHandler);
 
 
