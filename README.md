@@ -16,7 +16,7 @@ With Schedulr, you'll never worry about double-bookings or missed appointments. 
 - ⏳ **Set Your Availability & Time Slots** (No Double-Booking!)
 - 🌍 **Auto-Detect Time Zones**
 - 📆 **Custom-Built Calendar** – No Plugins!
-- 🔄 **Integration & Apps** (Sync Your Google Meet & Calendar Scratch)
+- 🔄 **Integration & Apps** (Sync Your Google Meet & Calendar)
 - ✅ **Track Upcoming, Past & Canceled Meetings**
 - 🕰️ **Switch Between 12h & 24h Formats**
 - 💻 **Built with**: Node.js, TypeORM, PostgreSQL, React.js
