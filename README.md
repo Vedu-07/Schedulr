@@ -101,7 +101,7 @@ This project leverages the latest tools and frameworks for modern development:
 
 6. Calendar Scheduling Page
 
-   ![Screenshot 2025-04-09 232358](https://github.com/user-attachments/assets/1a63ba07-8f3f-43fc-b6a8-87ff5a030cce)
+   ![Screenshot 2025-04-09 232342](https://github.com/user-attachments/assets/17d9a290-2e37-4bbc-ba7e-48df6455ab2b)
 
 7. Event Scheduled
 
